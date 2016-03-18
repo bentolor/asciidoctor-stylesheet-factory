@@ -47,3 +47,14 @@ p {
 }
 
 @import "components/print";
+
+
+.quoteblock blockquote p {
+     font-size: 1.0625rem;
+}
+
+@media print {
+    .quoteblock blockquote p {
+         font-size: 1.0625rem;
+    }
+}

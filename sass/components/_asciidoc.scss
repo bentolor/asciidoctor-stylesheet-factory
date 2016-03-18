@@ -317,7 +317,7 @@ b.button:after {
     margin-left: emCalc(2px);
   }
   ul.sectlevel0 > li > a {
-    font-style: italic; 
+    font-style: italic;
   }
   ul.sectlevel0 ul.sectlevel1 {
     margin: 0.5em 0;
@@ -594,7 +594,7 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
   td.content {
     padding-left: emCalc(18px);
     padding-right: emCalc(20px);
-    border-left: $hr-border-width $hr-border-style $hr-border-color; 
+    border-left: $hr-border-width $hr-border-style $hr-border-color;
     // FIXME use $aside-font-color
     color: $blockquote-cite-font-color;
     // QUESTION use opacity instead of blockquote-cite-font-color?
@@ -689,7 +689,7 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
       white-space: pre;
       word-wrap: normal;
     }
-    
+
     // screens below breakpoint
     padding: $pre-padding;
     font-size: emCalc(13px);
@@ -749,13 +749,13 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
 }
 
 .listingblock.terminal pre .command:before {
-  content: attr(data-prompt); 
+  content: attr(data-prompt);
   padding-right: 0.5em;
   color: #999;
 }
 
 .listingblock.terminal pre .command:not([data-prompt]):before {
-  content: "$"; 
+  content: "$";
 }
 
 // overrides for Pygments default styles
@@ -810,7 +810,7 @@ table.pyhltable .linenodiv {
   blockquote, blockquote p {
     color: $blockquote-font-color;
     font-size: 1.15rem;
-    line-height: 1.75;
+    //line-height: 1.75;
     word-spacing: 0.1em;
     letter-spacing: 0;
     font-style: italic;
@@ -826,7 +826,7 @@ table.pyhltable .linenodiv {
       content: "\201c";
       float: left;
       //font-size: 3em;
-      font-size: 2.75em;
+      font-size: 1.75em;
       font-weight: bold;
       line-height: 0.6em; // use 0.67em if font-weight: normal
       margin-left: -0.6em;
@@ -1329,7 +1329,7 @@ sup.footnoteref {
   .big {
     font-size: larger;
   }
-  
+
   .small {
     font-size: smaller;
   }
@@ -1345,7 +1345,7 @@ sup.footnoteref {
     .#{$color} {
       color: scale-color(string-to-color($color), $lightness: $rainbow-lightness);
     }
-  
+
     .#{$color}-background {
       background-color: scale-color(string-to-color($color), $lightness: $rainbow-bg-lightness);
     }
